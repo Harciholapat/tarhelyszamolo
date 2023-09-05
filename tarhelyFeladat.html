@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tarhelyFeladat.css">
+    <script src="tarhelyFeladat.js"></script>
+    <title>Tárhely Számoló</title>
+</head>
+<body>
+    <div>
+        <form>
+            <h1>Tárhely Számoló</h1>
+            <label class="kapacitas" for="kapacitas">Kapactás: </label>
+            <input class="kapacitas" type="number" name="kapacitas" id="">
+            <select class="kapacitas" name="kapacitasSel" id="">
+                <option value="" hidden selected disabled>VÁLASSZON</option>
+                <option value="Mb">Mb</option>
+                <option value="Gb">Gb</option>
+                <option value="Tb">Tb</option>
+            </select> <br>
+            <label for="">Átvitel: </label>
+            <label for="sebesseg">Sebesség:</label>
+            <input type="range" name="sebesseg" min="6" max="5000" value="2497" id="sebessegSzam" onchange="valtoz()">
+            <select name="sebessegSel" id="">
+                <option value="" hidden selected disabled>VÁLASSZON</option>
+                <option value="mbps">mbps</option>
+                <option value="Kbps">Kbps</option>
+                <option value="Mbps">Mbps</option>
+                <option value="Gbps">Gbps</option>
+            </select>
+        </form>
+        <p id="sliderSzam">2497</p>
+        <p>Eredmény</p>
+    </div>
+    <p class="Xd">JS nem működik de legajább szép™</p>
+</body>
+</html>
